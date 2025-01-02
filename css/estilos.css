@@ -1,0 +1,600 @@
+/* Barra de navegación superior */
+/* Estilo del encabezado principal */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(6, 29, 59, 0.8); /* Azul marino más transparente */
+    color: #E8DCF4;
+    padding: 10px 0;
+}
+
+/* Barra de navegación */
+.navbarr {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(6, 29, 59, 0.8); /* Azul marino con transparencia */
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+.navbarr a {
+    color: #E8DCF4;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 5px 15px;
+    transition: all 0.3s ease;
+}
+
+.navbarr a:hover {
+    background-color: #4A148C;
+    border-radius: 5px;
+    color: #FFF;
+}
+
+.top-bar {
+    display: flex; /* Coloca los elementos en fila horizontal */
+    justify-content: space-between; /* Espaciado uniforme entre las secciones */
+    align-items: center; /* Centrado vertical */
+    padding: 10px 40px;
+}
+
+/* 1: Logo y Nombre */
+.ate {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+.ate img {
+    width: 50px; /* Tamaño del logo */
+}
+
+/* 2: Dirección */
+.dir {
+    display: flex;
+    flex-direction: column; /* Dirección vertical dentro de la sección */
+    align-items: flex-start; /* Alineación a la izquierda */
+    flex: 2;
+    text-align: left;
+}
+
+.dir img {
+    margin-right: 10px;
+}
+
+/* 3: Horarios */
+.horario {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 2;
+    text-align: left;
+}
+
+/* 4: Teléfono */
+.tel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    text-align: left;
+}
+
+/* 5: Redes Sociales */
+.redes {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alineación a la derecha */
+    gap: 15px;
+    flex: 1;
+}
+
+.redes img {
+    width: 22px; /* Tamaño de los íconos */
+    height: 22px;
+}
+
+
+
+
+
+
+/* Inicio ↓ */
+
+
+
+#inicio {
+    position: relative;
+    z-index: 1;
+}
+
+.main-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+#inicio {
+    margin-top: 100px; /* Ajusta según la altura de tu barra */
+}
+
+/* Contenedor principal de la imagen */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ocupa toda la pantalla */
+    overflow: hidden;
+}
+
+.imagen-principal {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+}
+
+/* Texto superpuesto */
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra horizontal y verticalmente */
+    color: #fff; /* Texto blanco */
+    text-align: center;
+    z-index: 2; /* Asegura que esté encima de la imagen */
+    background: rgba(6, 29, 59, 0.6); /* Fondo azul marino translúcido */
+    padding: 30px;
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 800px; /* Ancho máximo del texto */
+}
+
+/* Estilo del título principal */
+.main-title {
+    font-family: "Ephesis", cursive;
+    font-size: 4rem; /* Tamaño grande */
+    margin-bottom: 20px;
+}
+
+/* Estilo del subtítulo */
+.sub-title {
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5; /* Espaciado entre líneas */
+    margin-bottom: 20px;
+}
+
+/* Botón personalizado */
+.btn-overlay {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ff6f61; /* Color del botón */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-overlay:hover {
+    background-color: #e05650; /* Cambia de color al pasar el mouse */
+    transform: scale(1.05); /* Efecto de agrandamiento */
+}
+
+
+
+
+
+
+
+/* Servicios ↓ */
+
+.servicios {
+    background-color: #061D3B; /* Fondo azul marino */
+    color: #E8DCF4; /* Texto claro */
+    padding: 250px 100px;
+    text-align: center;
+}
+
+.prservicios {
+    font-size: 2rem;
+    font-family: "Ephesis", cursive;
+    margin-bottom: 30px;
+    color: #ffcc00; /* Color dorado para destacar */
+}
+
+.servicios-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.servicio-card {
+    background-color: #0A2742; /* Azul marino más oscuro */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    color: #E8DCF4;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.servicio-titulo {
+    font-size: 1.5rem;
+    font-family: Arial, sans-serif;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #ffcc00; /* Dorado */
+}
+
+.servicio-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.servicio-card li {
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed #E8DCF4;
+    padding: 5px 0;
+}
+
+.servicio-card li span {
+    color: #ffcc00; /* Precio en dorado */
+}
+
+@media (max-width: 768px) {
+    .servicios-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicio-card {
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+/* Galeria ↓ */
+
+
+/* Fondo de la sección */
+.galeria-container {
+    text-align: center;
+    background-color: #0A2742; /* Azul marino más suave */
+    padding: 250px;
+    border-radius: 10px;
+    margin: 0 auto; /* Alinea al centro */
+    max-width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
+}
+
+/* Título de la galería */
+.pgal {
+    font-size: 2.5rem;
+    font-family: "Ephesis", cursive;
+    color: #ffcc00; /* Color dorado */
+    margin-bottom: 30px;
+}
+
+/* Estilo de las imágenes */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.galerias {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    border: 5px solid #ffcc00; /* Borde dorado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover en las imágenes */
+.galerias:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Adaptación a pantallas pequeñas */
+@media (max-width: 768px) {
+    .galerias {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .galerias {
+        width: 90%;
+    }
+}
+
+
+
+
+
+/* Noticias ↓ */
+
+
+
+/* Sección principal */
+.noticias {
+    background-color: #061D3B; /* Fondo azul marino */
+    color: #E8DCF4; /* Texto claro */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+/* Título principal */
+.notic {
+    font-size: 2.5rem;
+    padding: 120;
+    font-family: "Ephesis", cursive;
+    color: #ffcc00; /* Dorado */
+    margin-bottom: 30px;
+}
+
+/* Contenedor de las tarjetas */
+.noticias-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: center;
+}
+
+/* Tarjetas de noticias */
+.noticia-card {
+    background-color: #0A2742; /* Azul más oscuro */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    overflow: hidden;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.noticia-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Sombra al pasar el mouse */
+}
+
+/* Imagen de las noticias */
+.noticia-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /* Asegura que la imagen no se deforme */
+}
+
+/* Contenido de las noticias */
+.noticia-content {
+    padding: 15px;
+    text-align: left;
+}
+
+.noticia-titulo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffcc00; /* Dorado */
+    margin-bottom: 10px;
+}
+
+.noticia-texto {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #E8DCF4; /* Texto claro */
+}
+
+/* Responsivo */
+@media (max-width: 800px) {
+    .noticias-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .noticia-card {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+/* Contacto ↓ */
+
+.contactenos-container {
+    background-color: #061D3B; /* Fondo azul marino */
+    color: #E8DCF4; /* Texto claro */
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+}
+
+.titulo-contactenos {
+    font-size: 2rem;
+    font-family: "Ephesis", cursive;
+    color: #ffcc00; /* Dorado */
+    margin-bottom: 20px;
+}
+
+.texto-contactenos {
+    font-size: 1.2rem;
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.redes-sociales {
+    margin-bottom: 20px;
+}
+
+.redes-sociales a {
+    color: #E8DCF4;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.redes-sociales img {
+    width: 24px;
+    height: 24px;
+}
+
+.redes-sociales a:hover {
+    color: #ffcc00; /* Dorado al pasar el mouse */
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-decoration: none;
+}
+
+.whatsapp-button img {
+    width: 30px;
+    height: 30px;
+}
+
+.whatsapp-button:hover {
+    background-color: #1EBE5A;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+
+/* Final */
+
+.main-footer {
+    background-color: #061D3B; /* Azul marino */
+    color: #E8DCF4; /* Texto claro */
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.footer-name {
+    font-size: 1.5rem;
+    font-family: "Ephesis", cursive;
+    color: #ffcc00; /* Dorado */
+}
+
+.footer-links h4,
+.footer-social h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #ffcc00; /* Dorado */
+}
+
+.footer-links a,
+.footer-social a {
+    color: #E8DCF4;
+    text-decoration: none;
+    margin-bottom: 8px;
+    display: block;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+    color: #ffcc00; /* Dorado al pasar el cursor */
+}
+
+.footer-social a img {
+    width: 30px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.footer-social a:hover img {
+    transform: scale(1.2); /* Agranda ligeramente el icono */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #E8DCF4;
+    padding-top: 20px;
+    font-size: 0.9rem;
+    color: #E8DCF4;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links,
+    .footer-social {
+        margin-top: 20px;
+    }
+}
